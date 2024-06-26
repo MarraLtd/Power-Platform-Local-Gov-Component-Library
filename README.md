@@ -8,7 +8,7 @@ The library's components are compliant with Government Design System (GDS) and m
 
 To download and import the artifact into a Power Platform environment:
 
-1. On this Github Repo page, click **Download Zip** from the **Code** dropdown.
+1. Download the solution artefact from the most [recent release](https://github.com/MarraLtd/Power-Platform-Local-Gov-Component-Library/releases).
 
 2. From Power Apps, go to Solutions tab in Power Apps Studio.
 
@@ -46,13 +46,8 @@ The components themselves are contained in the **Master - LocalGov Components** 
 
 2. Go to Insert > Get more components (file and magnifying glass symbol) > Master - LocalGov Components > Select all components needed > Import.
 
-3. Components can be used as in the Canvas App as Library Components from the **Insert** menu.
+3. Components can be used in a Canvas App as Library Components from the **Insert** menu.
 
 ## Example App
 
 The example app contains a typical application which has all the components on 2 separate user journeys. This can be used as guidance when creating custom functionality and theming for your own applications.
-
-
-
-
-
