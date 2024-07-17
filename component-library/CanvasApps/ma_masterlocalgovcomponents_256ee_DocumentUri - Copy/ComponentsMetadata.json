@@ -1,0 +1,32 @@
+{
+  "Components": [
+    {
+      "Name": "TelephoneNumber",
+      "TemplateName": "38f14368cbe34977b6c2605c32b511cb",
+      "Description": "Added on submit and reset",
+      "AllowCustomization": true,
+      "AllowAccessToGlobals": false
+    },
+    {
+      "Name": "CompDate",
+      "TemplateName": "eed044a811894fe59c4a972ca9f244bd",
+      "Description": "Added validation to date Component",
+      "AllowCustomization": true,
+      "AllowAccessToGlobals": false
+    },
+    {
+      "Name": "Email",
+      "TemplateName": "38598ef27b1943689142d307f2bab7e4",
+      "Description": "Made styling consistent to other components",
+      "AllowCustomization": true,
+      "AllowAccessToGlobals": false
+    },
+    {
+      "Name": "Address",
+      "TemplateName": "9223accbba5f46c39f3c2402edaa3544",
+      "Description": "Made styling consistent to other components",
+      "AllowCustomization": true,
+      "AllowAccessToGlobals": false
+    }
+  ]
+}
