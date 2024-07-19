@@ -8,7 +8,7 @@ The library's components are compliant with Government Design System (GDS) and m
 
 To download and import the artifact into a Power Platform environment:
 
-1. Download the solution artefact from the most [recent release](https://github.com/MarraLtd/Power-Platform-Local-Gov-Component-Library/releases).
+1. Download the Power-Platform-Local-Gov-Component-Library.zip solution artefact from the most [recent release](https://github.com/MarraLtd/Power-Platform-Local-Gov-Component-Library/releases).
 
 2. From Power Apps, go to Solutions tab in Power Apps Studio.
 
