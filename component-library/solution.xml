@@ -1,4 +1,4 @@
-<ImportExportXml version="9.2.24053.170" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.24064.176" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>LocalGovComponentLibrary</UniqueName>
     <LocalizedNames>
@@ -81,11 +81,6 @@
       <RootComponent type="300" schemaName="ma_localgovcomponentsglossary_f5343" behavior="0" />
       <RootComponent type="300" schemaName="ma_masterlocalgovcomponents_256ee" behavior="0" />
     </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required type="300" schemaName="crc2d_masterlocalgovcomponent_d1b00" displayName="DEPRECATED - Master - LocalGovComponent" solution="Active" />
-        <Dependent type="300" schemaName="ma_exampleapp_8447d" displayName="Example App" />
-      </MissingDependency>
-    </MissingDependencies>
+    <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>
