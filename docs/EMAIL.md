@@ -22,7 +22,7 @@ There are also custom output properties which can be used to reference component
 
     - **Default:** Enter a valid email
 
-- **IsReadOnly** - Boolean value that controls whether the text input is disabled or not.
+- **IsReadOnly** - Boolean value that controls whether the text input is disabled. While true the input is disabled and whilst false the input can be typed into.
 
     - **Default:** False
 
@@ -84,11 +84,11 @@ All errors beside empty input give the "Enter an email address in the correct fo
 
 - **No Domain** - Triggers when there is no domain on the end of the email. For example, the input "tester@software.".
 
-- **No Mailserver** - Triggers when there is no mail server in the middle of the email. For example, the input "test@.com".
+- **No Mail Server** - Triggers when there is no mail server in the middle of the email. For example, the input "test@.com".
 
 - **No Username** - Triggers when there is no username at the start of the email. For example, the input "@software.com".
 
-- **2 @ symbols** - Triggers when there are 2 @ symbols anywhere in the email.
+- **Multiple @ symbols** - Triggers when there are 2 or more @ symbols anywhere in the email.
 
 - **No @ symbol** - Triggers when no @ symbol in the email since this is a required part of every email address
 
@@ -96,7 +96,7 @@ All errors beside empty input give the "Enter an email address in the correct fo
 
 - **Internal Whitespace** - Triggers when there is any whitespace separating 2 non-empty sections of the email. Note, whitespace is valid before the first character of the email and after the last, although this is removed under sanitisation.
 
-- **Character Limit** - There is a 254-character limit on the email field, it will not allow a user to enter more characters than this.
+- **Character Limit** - There is a 254-character limit on the email field as mandated by the [RFC3696](https://www.rfc-editor.org/errata_search.php?rfc=3696&eid=1690), it will not allow a user to enter more characters than this. 
 
 
 
