@@ -25,11 +25,15 @@ fi
 
 NEW_SOLUTION_DIR=$(dirname $NEW_SOLUTION_ZIP)
 SOLUTION_UNPACKED_FOLDER="${NEW_SOLUTION_DIR}\unpacked_solution"
-MSAPP_FILE_PATH="${SOLUTION_UNPACKED_FOLDER}\CanvasApps\cr6fd_govlib_137b8_DocumentUri.msapp"
+
 MSAPP_UNPACKED_FOLDER="${SOLUTION_UNPACKED_FOLDER}\CanvasApps\unpacked_msapp"
 
 echo "Unpacking solution"
 pac solution unpack --zipfile $NEW_SOLUTION_ZIP --folder $SOLUTION_UNPACKED_FOLDER --packagetype Managed
+
+MSAPP_FILE_PATH=$(find "${SOLUTION_UNPACKED_FOLDER}\CanvasApps" -type f -iname "*.msapp")
+msapp_filename=$(basename $MSAPP_FILE_PATH)
+LIB_ID="${msapp_filename%_DocumentUri.*}"
 
 echo "Unpacking msapp file"
 pac canvas unpack --msapp $MSAPP_FILE_PATH --sources $MSAPP_UNPACKED_FOLDER
@@ -38,7 +42,7 @@ echo "Deleting Entropy folder"
 rm -r "${MSAPP_UNPACKED_FOLDER}\Entropy"
 
 echo "Updating component IDs"
-node ./update_msapp_ids.js ${SOLUTION_UNPACKED_FOLDER} "unpacked_msapp"
+node ./update_msapp_ids.js ${SOLUTION_UNPACKED_FOLDER} "unpacked_msapp" ${LIB_ID}
 
 echo "Packing msapp file"
 pac canvas pack --sources ${MSAPP_UNPACKED_FOLDER} --msapp ${MSAPP_FILE_PATH}
