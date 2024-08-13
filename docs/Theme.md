@@ -78,19 +78,19 @@ Size values are all provided as Number.
 - **Type**: Size
 
 #### InputBorderRadiusTopLeft
-- **Description**: Radius of the border of the top left corner of input controls. 0 is a square corner, increase the value to increase the roundness.
+- **Description**: Radius of the border of the top left corner of input controls. 0 is a square corner, increase the value to increase the roundness
 - **Type**: Size
 
 #### InputBorderRadiusTopRight
-- **Description**: Radius of the border of the top right corner of input controls. 0 is a square corner, increase the value to increase the roundness.
+- **Description**: Radius of the border of the top right corner of input controls. 0 is a square corner, increase the value to increase the roundness
 - **Type**: Size
 
 #### InputBorderRadiusBottomLeft
-- **Description**: Radius of the border of the bottom left corner of input controls. 0 is a square corner, increase the value to increase the roundness.
+- **Description**: Radius of the border of the bottom left corner of input controls. 0 is a square corner, increase the value to increase the roundness
 - **Type**: Size
 
 #### InputBorderRadiusBottomRight
-- **Description**: Radius of the border of the bottom right corner of input controls. 0 is a square corner, increase the value to increase the roundness.
+- **Description**: Radius of the border of the bottom right corner of input controls. 0 is a square corner, increase the value to increase the roundness
 - **Type**: Size
 
 #### InputBorderColor
