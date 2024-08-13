@@ -10,47 +10,49 @@ The [GDS guidance for emails](https://design-system.service.gov.uk/patterns/emai
 
 The component has various custom inputs which dictate the functionality, styling and error handling of the component. 
 
+We show the display name of the property as well as its advanced name in the form **Display name - AdvancedName**
+
 There are also custom output properties which can be used to reference component input values and state in other controls. 
 
 ### Inputs
 
-- **Title** - Text to be shown as the title.
+- **Title - Title** - Text to be shown as the title.
 
-    - **Default:** What is your email?
+    - **Default:** What is your Email?
 
-- **Subtitle** - Text to be shown as the subtitle.
+- **Subtitle - Subtitle** - Text to be shown as the subtitle.
 
     - **Default:** Enter a valid email
 
-- **IsReadOnly** - Boolean value that controls whether the text input is disabled. While true the input is disabled and whilst false the input can be typed into.
+- **View mode - ViewMode** - Boolean value that controls whether the text input is disabled. While true the input is disabled and whilst false the input can be typed into.
 
     - **Default:** False
 
-- **IsIconShown** - Boolean value that controls visibility of the email icon.
+- **Show icon - ShowIcon** - Boolean value that controls visibility of the email icon.
 
     - **Default:** False
 
-- **Theme** - Configures the styling of component elements. 
+- **Theme - Theme** - Configures the styling of component elements. 
 
     - **Default:** See [insert link for theme contract page]
 
-- **IsRequired** - Boolean value that controls whether the text input is required or optional.
+- **Required - Required** - Boolean value that controls whether the text input is required or optional.
 
     - **Default:** True
 
-- **IsTitleShown** - Boolean value that controls the title visibility.
+- **Show title - ShowTitle** - Boolean value that controls the title visibility.
 
     - **Default:** True
 
-- **IsSubtitleShown** - Boolean value that controls the subtitle visibility.
+- **Show subtitle - ShowSubtitle** - Boolean value that controls the subtitle visibility.
 
     - **Default:** True
 
-- **IsOnSubmitEnabled** - Enables submit functionality. When this is false, live validation is used. Need to hook up component to a button control to trigger validation with submit functionality. 
+- **Submit enabled - SubmitEnabled** - Enables submit functionality. When this is false, live validation is used. Need to hook up component to a button control to trigger validation with submit functionality. 
 
     - **Default:** True
 
-- **Submit** - Boolean to trigger the on submit functionality. Only works when IsOnSubmitEnabled is set to true.
+- **Submit - Submit** - Boolean to trigger the on submit functionality. Only works when SubmitEnabled is set to true.
 
     - **Default:** False
 
