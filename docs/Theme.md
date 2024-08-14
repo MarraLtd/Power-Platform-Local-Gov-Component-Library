@@ -25,11 +25,11 @@ Table(
 )
 ```
 
-If a name is missing from the Theme input property, the component will default to the value which was contained in the default Theme Table.
+If a name is missing from the Theme input property, the component will fall back to an internal default.
 
 Color values are all provided as Hex text.
 
-Size values are all provided as Number.
+Size values are all provided as Number, and follow the existing sizes used within Power Platform for font sizes, padding etc.
 
 ### Customizable Properties
 
@@ -51,7 +51,7 @@ Size values are all provided as Number.
 - **TitleSize** - Size of the font used for the component title
     - **Type**: Size
 
-- **Size** - Size of the font used for the component body
+- **Size** - Size of the font used for all text apart from the component title
     - **Type**: Size
 
 - **Font** - Font used for the text of the component. This can be any supported font within Power Apps, e.g. "Arial", "Times New Roman" etc.
@@ -60,7 +60,7 @@ Size values are all provided as Number.
 - **TitleColor** - Color of the text in the component title
     - **Type**: Color
 
-- **Color** - Color of the text in the component body
+- **Color** - Color of all text apart from the component title and error message
     - **Type**: Color
 
 - **InputBorderThickness** - Thickness of the border around input controls
