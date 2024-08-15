@@ -34,7 +34,7 @@ There are also custom output properties which can be used to reference component
 
 - **Theme - Theme** - Configures the styling of component elements. 
 
-    - **Default:** See [insert link for theme contract page]
+    - **Default:** See [Theme Documentation](../Theme.md).
 
 - **Required - Required** - Boolean value that controls whether the text input is required or optional.
 
