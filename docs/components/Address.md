@@ -74,7 +74,7 @@ All errors in the postcode field besides empty input give the "Enter a full UK p
 
 - **Minimum character limit** - Triggers when the postcode is shorter than 5 characters. For example, the input "NW3".
 - **Starts with more than 2 letters** - Triggers when the postcode starts with more than 2 letters. For example, the input "GEH11 2JJ".
-    - There are exceptions this, where the first part of the postcode (incode) corresponds to a British overseas territory. Postcodes where the first part is ASCN, BBND, CIQQ, FIQQ, GX11, PCRN, SIQQ, STHL, TDCU or TKCA are all accepted and will not trigger an error.
+    - There are exceptions to this, where the first part of the postcode (outcode) corresponds to a British overseas territory. Postcodes where the first part is ASCN, BBND, CIQQ, FIQQ, GX11, PCRN, SIQQ, STHL, TDCU or TKCA are all accepted and will not trigger an error.
 - **Does not have 2 letters at the end** - Triggers when the postcode does not end in 2 letters or ends in more than 2 letters. For example, the inputs "G1 1D1" or "G1 1DDD".
 - **First part (outcode) starts with a number** - Triggers when the first part of the postcode input starts with a number. For example, the input "1AA 3ED".
 - **Second half (incode) starts with a letter** - Triggers when the second part of the postcode input starts with a letter. For example, the input "NE33 FDG".
