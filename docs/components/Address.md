@@ -2,7 +2,7 @@
 
 ## Description
 
-The address component can be used whenever a user has to enter a UK based address. It offers out of the box validation against the standard UK and British overseas terrority postcode format and gives tailored error messages for each field based on input.
+The address component can be used whenever a user has to enter a UK based address. It offers out of the box validation against the standard UK and British overseas territory postcode format and gives tailored error messages for each field based on input.
 
 The [GDS guidance for addresses](https://design-system.service.gov.uk/patterns/addresses/) was used as a basis for the component and [WCAG2.2](https://www.w3.org/WAI/WCAG22/Understanding/) compliance is offered out of the box.
 
@@ -30,17 +30,20 @@ There are also custom output properties which can be used to reference component
     - **Default:** - False
 - **Theme - Theme** - Configures the styling of component elements
     - **Default:** - See [Theme Documentation](../Theme.md).
-- **Address line 1 - AddressLine1** - A record that controls whether the address line 1 text input is required or optional, controls the visibility of the address line 1 field and controls the width proportion of the text input. Note a width proportion of 1 results in the text input width equal to the width of the component.
+
+The following input properties are records that control whether the respective text input is required or optional, controls the visibility of the respective field and controls the width proportion of the text input. Note, a width proportion of 1 results in the text input width equal to the width of the component.
+
+- **Address line 1 - AddressLine1** 
     - **Default:** - {Required: true, Visible: true, InputWidthProportion: 1}
-- **Address line 2 - AddressLine2** - A record that controls whether the address line 2 text input is required or optional, controls the visibility of the address line 2 field and controls the width proportion of the text input. Note a width proportion of 1 results in the text input width equal to the width of the component.
+- **Address line 2 - AddressLine2**
     - **Default:** - {Required: true, Visible: true, InputWidthProportion: 1}
-- **Town/City - TownCity** - A record that controls whether the town or city text input is required or optional, controls the visibility of the town or city field and controls the width proportion of the text input. Note a width proportion of 1 results in the text input width equal to the width of the component.
+- **Town/City - TownCity**
     - **Default:** - {Required: true, Visible: true, InputWidthProportion: 2/3}
-- **County - County** - A record that controls whether the county text input is required or optional, controls the visibility of the county field and controls the width proportion of the text input. Note a width proportion of 1 results in the text input width equal to the width of the component.
+- **County - County**
     - **Default:** - {Required: true, Visible: true, InputWidthProportion: 2/3}
-- **Postcode - Postcode** - A record that controls whether the postcode text input is required or optional, controls the visibility of the postcode field and controls the width proportion of the text input. Note a width proportion of 1 results in the text input width equal to the width of the component.
+- **Postcode - Postcode**
     - **Default:** - {Required: true, Visible: true, InputWidthProportion: 1/3}
-- **Country - Country** - A record that controls whether the country text input is required or optional, controls the visibility of the country field and controls the width proportion of the text input. Note a width proportion of 1 results in the text input width equal to the width of the component.
+- **Country - Country**
     - **Default:** - {Required: true, Visible: true, InputWidthProportion: 2/3}
 
 ### Outputs
@@ -67,10 +70,11 @@ Below is a list of input cases that the address validation triggers an error for
 
 - **Empty Inputs** - Triggers when a user does not enter an input where the field is required. Also triggered when whitespace is entered into a required field. For each field, individual error messages are shown e.g. for address line 1, the error message is "Enter address line 1, typically the building and street".
 
-All errors in the postcode field besides empty input give the "Enter a full UK postcode" error message. The postcode validation we used is deliberately conservative so that there is no case where a valid UK or British overseas terrority postcode triggers an error.
+All errors in the postcode field besides empty input give the "Enter a full UK postcode" error message. The postcode validation we used is deliberately conservative so that there is no case where a valid UK or British overseas territory postcode triggers an error.
 
 - **Minimum character limit** - Triggers when the postcode is shorter than 5 characters. For example, the input "NW3".
 - **Starts with more than 2 letters** - Triggers when the postcode starts with more than 2 letters. For example, the input "GEH11 2JJ".
+    - There are exceptions this, where the first part of the postcode (incode) corresponds to a British overseas territory. Postcodes where the first part is ASCN, BBND, CIQQ, FIQQ, GX11, PCRN, SIQQ, STHL, TDCU or TKCA are all accepted and will not trigger an error.
 - **Does not have 2 letters at the end** - Triggers when the postcode does not end in 2 letters or ends in more than 2 letters. For example, the inputs "G1 1D1" or "G1 1DDD".
 - **First part (outcode) starts with a number** - Triggers when the first part of the postcode input starts with a number. For example, the input "1AA 3ED".
 - **Second half (incode) starts with a letter** - Triggers when the second part of the postcode input starts with a letter. For example, the input "NE33 FDG".
