@@ -2,7 +2,7 @@
 
 ## Description
 
-In order to create usable forms the components need to be able to integrate with standard Canvas App controls so that standard form actions can be executed. 
+In order to create usable forms, the components need to be able to integrate with standard Canvas App controls so that standard form actions can be executed. 
 
 The components can be hooked up to Canvas App controls via exposed custom input properties. We will focus on the **submit** and **reset** actions of our components.
 
@@ -16,7 +16,7 @@ Every component has a boolean input **Submit enabled** which dictates whether th
 
 Live validation means the validation occurs as soon as the input is clicked out of. This means the errors show as soon as the **HasError** output boolean switches from false to true. For an error to show for empty field validation, a value must be entered, clicked out of, clicked back into, removed and then clicked out of again. This prevents errors showing as soon as fields are clicked into. 
 
-Submit validation means errors show on selection of a button or any other external trigger which can drive a boolean value. The **HasError** ouput property will switch to true as soon as an error is entered and component is clicked out of (same as live validation behaviour). However, the component error will not show to the user until the **Submit** input boolean has changed its value. The **Submit** boolean allows the errors to be triggered by an external control and every time **Submit** changes it will display the results of the validation on the component.
+Submit validation means errors show on selection of a button or any other external trigger which can drive a boolean value. The **HasError** output property will switch to true as soon as an error is entered and component is clicked out of (same as live validation behaviour). However, the component error will not show to the user until the **Submit** input boolean has changed its value. The **Submit** boolean allows the errors to be triggered by an external control and every time **Submit** changes it will display the results of the validation on the component.
 
 ###  Set Up
 
@@ -38,7 +38,7 @@ Where `SubmitVar` is a generic boolean submission variable.
 
 5. Save and refresh the application.
 
-6. In play mode, clicking the button will show the reuslt fo the component validation.
+6. In play mode, clicking the button will show the result of the component validation.
 
 ### Tips
 
@@ -48,17 +48,17 @@ Where `SubmitVar` is a generic boolean submission variable.
 
 - Component submission variables must be unique for submissions of single components.
 
-- Multiple components can be submitted simultaneously by adding the same submission variable to the **Submit** propety of all components.
+- Multiple components can be submitted simultaneously by adding the same submission variable to the **Submit** property of all components.
 
-- Other actions can be performed based on the outcome of the submission. For example navigating to another page of the form if there are no errors usng the **HasError** property of the component.
+- Other actions can be performed based on the outcome of the submission. For example navigating to another page of the form if there are no errors using the **HasError** property of the component.
 
 ## Reset
 
 ### Description
 
-Our components have the ability to be reset by other Power Apps controls suc aas a button. Any control that can call the Power FX **Reset** function in a property can reset a component.
+Our components have the ability to be reset by other Power Apps controls such as a button. Any control that can call the Power FX **Reset** function in a property can reset a component.
 
-From a user perspective, resetting the component will reset the field input(s) and the componenent errors. All input and output properties are also reset to their default values, these can be found in the component specific docs in the `./components` folder.
+From a user perspective, resetting the component will reset the field input(s) and the component errors. All input and output properties are also reset to their default values, these can be found in the component specific docs in the `./components` folder.
 
 ### Set Up
 
