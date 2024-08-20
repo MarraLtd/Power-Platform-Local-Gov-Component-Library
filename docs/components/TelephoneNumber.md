@@ -17,39 +17,30 @@ There are also custom output properties which can be used to reference component
 ### Inputs
 
 - **Title - Title** - Text to be shown as the title.
-
     - **Default:** What is your telephone number?
 
 - **Subtitle - Subtitle** - Text to be shown as the subtitle.
-
     - **Default:** Enter a valid telephone number
 
-- **Show icon - ShowIcon** - Boolean value that controls visibility of the telephone icon.
-
-    - **Default:** False
-
-- **Theme - Theme** - Configures the styling of component elements. 
-
-    - **Default:** See [Theme Documentation](../Theme.md).
-
-- **Required - Required** - Boolean value that controls whether the text input is required or optional.
-
-    - **Default:** True
-
 - **Show title - ShowTitle** - Boolean value that controls the title visibility.
-
     - **Default:** True
 
 - **Show subtitle - ShowSubtitle** - Boolean value that controls the subtitle visibility.
+    - **Default:** True
 
+- **Required - Required** - Boolean value that controls whether the text input is required or optional.
     - **Default:** True
 
 - **Submit enabled - SubmitEnabled** - Enables submit functionality. When this is false, live validation is used. Need to hook up component to a button control to trigger validation with submit functionality. 
-
     - **Default:** True
 
 - **Submit - Submit** - Boolean to trigger the on submit functionality. Only works when SubmitEnabled is set to true.
+    - **Default:** False
 
+- **Theme - Theme** - Configures the styling of component elements. 
+    - **Default:** See [Theme Documentation](../Theme.md).
+
+- **Show icon - ShowIcon** - Boolean value that controls visibility of the telephone icon.
     - **Default:** False
 
 ### Outputs
