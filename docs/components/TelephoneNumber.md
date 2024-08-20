@@ -51,7 +51,7 @@ There are also custom output properties which can be used to reference component
 
 - **RawValue** - Outputs the raw, unsanitised text input. This means exactly how the user enters the value.
 
-- **MinimumHeight** - Minimum height needed for all visible elements of the component to be shown. This is responsive to the height of the component, so no part of the component is ever cut off. This is the default value of the component's height property.
+- **MinHeight** - Minimum height needed for all visible elements of the component to be shown. This is responsive to the height of the component, so no part of the component is ever cut off. This is the default value of the component's height property.
 
 ### Output Sanitisation
 
