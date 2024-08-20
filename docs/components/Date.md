@@ -47,11 +47,13 @@ There are also custom output properties which can be used to reference component
 
 ### Outputs
 
-- **Value - Value** - Outputs the date input.
-- **Date format - DateFormat**
+- **Value - Value** - Outputs the sanitised date input.
+- **Date format - DateFormat** - Outputs common date formats, based on the fields visible in the component.
+    - If all fields are visible, the date format output is "dd/mm/yyyy".
+    - If the day and month fields are visible but the year field is not visible, the date format output is "dd/mm".
+    - If the month and year fields are visible but the day field is not visible, the date format output is "mm/yyyy".
 - **Has error - HasError** - Boolean value based on whether an error is present in the component.
 - **Min height - MinHeight** - Minimum height for all visible elements of the component to be shown. This is responsive to the height of the component, so no part of the component is ever cut off. This is the default value of the component's height property.
-- **Internal date format - InternalDateFormat**
 
 ### Output Sanitisation
 
@@ -77,9 +79,8 @@ Below is a list of input cases that the date validation triggers an error for.
 ### Relational dates
 When using the minimum and maximum date input properties (MinDate and MaxDate respectively), the below list of input cases will also trigger an error.
 
-- **Date is in the future when it needs to be the current day or in the past (i.e. MaxDate input property is DateValue(Today()) and MinDate input property is DateValue("01/01/1900"))** - Triggers when the minimum date set in the MinDate property is set as DateValue("01/01/1900"), the maximum date set in the MaxDate property is set as DateValue(Today()) and the date entered by the user is after the current day. For example, if the current day is 19th August 2024, the input "Day: 21, Month: 8, Year: 2024" will trigger an error.
-
-- **Date is in the past when it needs to be the current day or in the future**
-- **Date is not the same as or after the MinDate**
-- **Date is not the same as or before the MaxDate**
+- **Date is in the future when it needs to be the current day or in the past** - Triggers when the minimum date set in the MinDate input property is the default, the maximum date set in the MaxDate input property is set as the current day and the date entered by the user is after the current day. For example, if the current day is 19th August 2024, the input "Day: 21, Month: 8, Year: 2024" will trigger an error.
+- **Date is in the past when it needs to be the current day or in the future** - Triggers when the minimum date set in the MinDate input property is set as the current day, the maximum date in the MaxDate input property is the default and the date entered by the user is before the current day. For example, if the current day is 14th July 2024, the input "Day: 10, Month: 6, Year: 2023" will trigger an error.
+- **Date is not the same as or after the MinDate** - Triggers when the minimum date has been changed from the default in the MinDate input property, the maximum date in the MaxDate input property is the default and the date entered by the user is before the minimum date. For example, if the MinDate is set as 28th February 2024, the input "Day: 24, Month: 2, Year: 2024" will trigger an error.
+- **Date is not the same as or before the MaxDate** - Triggers when the minimum date in the MinDate input property is the default, the maximum date has been changed from the default in the MaxDate input property and the date entered by the user is after the maximum date. For example, if the the MaxDate is set as 19th November 2005, the input "Day: 25, Month: 1, Year: 2006" will trigger an error.
 - **Date is not between the MinDate and the MaxDate (inclusive)** - Triggers when the date input is before the minimum date set in the MinDate input property or after the maximum date set in the MaxDate input property. For example, if MinDate is DateValue("13/01/2024") and MaxDate is DateValue("20/01/2024"), the inputs "Day: 11, Month: 1, Year: 2024" and "Day: 22, Month: 1, Year: 2024" will trigger an error.
