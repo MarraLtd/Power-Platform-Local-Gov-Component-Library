@@ -61,6 +61,8 @@ The output for the date component (Date.Value) is a DateValue comprising of the 
 - If the year field is not visible (i.e. ShowYear is false), then the DateValue will use the default year set as an input property.
 - If the day field is not visible (i.e. ShowDay is false), then the DateValue will use the default day set as an input property.
 
+Note, the output sanitisation uses the Date formula. This means when a year is input that is less than 1900, the year output will be the year input + 1900.
+
 ## Error Handling
 
 Below is a list of input cases that the date validation triggers an error for.
