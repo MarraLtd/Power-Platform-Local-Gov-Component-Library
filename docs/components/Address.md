@@ -24,7 +24,7 @@ There are also custom output properties which can be used to reference component
     - **Default:** - True
 - **Show subtitle - ShowSubtitle** - Boolean value that controls the subtitle visibility.
     - **Default:** - True
-- **Submit enabled - SubmitEnabled** - Enables submit functionality. When this is false, live validation is used. Need to hook up component to a button control to trigger validation with submit functionality. 
+- **Submit enabled - SubmitEnabled** - Enables submit functionality. When this is false, live validation is used. To hook up submit functionality to an extenral control see [Form Actions docs](./../FormActions.md).
     - **Default:** - True
 - **Submit - Submit** - Boolean to trigger the on submit functionality. Only works when SubmitEnabled is set to true.
     - **Default:** - False

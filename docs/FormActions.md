@@ -14,15 +14,15 @@ The behaviour and instructions described here are the same for all of the compon
 
 Every component has a boolean input **Submit enabled** which dictates whether the component uses live validation (boolean=false) or on submit validation (boolean=true). 
 
-Live validation means the validation occurs as soon as the input is clicked out of. This means the errors show as soon as the **HasError** output boolean switches from false to true. For an error to show for empty field validation, a value must be entered, clicked out of, clicked back into, removed and then clicked out of again. This prevents errors showing as soon as fields are clicked into. 
+Live validation means the validation occurs as soon as the input loses focus. This means the errors show as soon as the **HasError** output boolean switches from false to true. For an error to show for empty field validation, a value must be entered and then removed. This prevents errors showing as soon as fields are clicked into. 
 
-Submit validation means errors show on selection of a button or any other external trigger which can drive a boolean value. The **HasError** output property will switch to true as soon as an error is entered and component is clicked out of (same as live validation behaviour). However, the component error will not show to the user until the **Submit** input boolean has changed its value. The **Submit** boolean allows the errors to be triggered by an external control and every time **Submit** changes it will display the results of the validation on the component.
+Submit validation means errors show on selection of a button or any other external trigger which can drive a boolean value. The **HasError** output property will switch to true as soon as an error is entered and input loses focus (same as live validation behaviour). However, the component error will not show to the user until the **Submit** input boolean has changed its value. The **Submit** boolean allows the errors to be triggered by an external control and every time **Submit** changes it will display the results of the validation on the component.
 
 ###  Set Up
 
 Below are instructions on how to link a button up so it submits a component:
 
-1. Add a library component to a canvas app. Submit should be enabled by default
+1. Add a library component to a canvas app. Submit is enabled by default.
 
 2. Add a button to the app.
 
@@ -46,11 +46,13 @@ Where `SubmitVar` is a generic boolean submission variable.
 
 - Any control that can update a variable value on an action can submit a component.
 
-- Component submission variables must be unique for submissions of single components.
-
 - Multiple components can be submitted simultaneously by adding the same submission variable to the **Submit** property of all components.
 
-- Other actions can be performed based on the outcome of the submission. For example navigating to another page of the form if there are no errors using the **HasError** property of the component.
+- Other actions can be performed based on the outcome of the submission. For example navigating to another page of the form if there are no errors using the **HasError** property of the component. For example, for a component `ComponentName` we  could have the following code in the **OnSelect** property.
+
+```
+If(!Email_2.HasError And !Date_2.HasError And !TelephoneNumber_2.HasError, Navigate('Multi-Component Screen 2'))
+```
 
 ## Reset
 
