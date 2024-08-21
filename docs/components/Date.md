@@ -50,7 +50,7 @@ There are also custom output properties which can be used to reference component
 ### Outputs
 
 - **Value - Value** - Outputs the sanitised date input.
-- **Date format - DateFormat** - Outputs common date formats, based on the fields visible in the component.
+- **Date format - DateFormat** - Outputs the format pattern of the date, based on the fields visible in the component.
     - If all fields are visible, the date format output is "dd/mm/yyyy".
     - If the day and month fields are visible but the year field is not visible, the date format output is "dd/mmm".
     - If the month and year fields are visible but the day field is not visible, the date format output is "mmm/yyyy".
@@ -63,7 +63,7 @@ The output for the date component (Date.Value) is a DateValue comprising of the 
 - If the year field is not visible (i.e. ShowYear is false), then the DateValue will use the default year set as an input property.
 - If the day field is not visible (i.e. ShowDay is false), then the DateValue will use the default day set as an input property.
 
-Note, the output sanitisation uses the Date formula. This means when a year is input that is less than 1900, the year output will be the year input + 1900.
+Note, the output sanitisation uses the [Date formula](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-date-time). This means when a year is input that is less than 1900, the year output will be the year input + 1900.
 
 Invalid day and month inputs will result in the date output to be incorrect. For example, the input "Day: 31, Month: 13, Year: 2021" will result in an output of "31/1/2022" and the input "Day: -4, Month: 2, Year: 2023" will result in an output of "27/1/2023".
 
