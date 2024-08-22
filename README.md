@@ -2,7 +2,7 @@
 
 The Local Government Component Library is an organized collection of reusable components for front-end development of Canvas Apps in the domain of Local Government. These components play a crucial role in enhancing development cohesion and UI consistency whilst being customisable to authority-specific styling and responsive to differing page designs. 
 
-The library's components are compliant with Government Design System (GDS) and meet the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Accessibility Guidelines.
+The library's components are compliant with Government Design System [GDS](https://design-system.service.gov.uk/patterns/) and meet the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Accessibility Guidelines.
 
 ## Downloading the Component Library Solution
 

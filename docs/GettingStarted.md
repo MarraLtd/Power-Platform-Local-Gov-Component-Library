@@ -1,6 +1,10 @@
 # Getting Started
 
-Thank you for using the component library. This page provides the information you'll need to get up and running.
+Thank you for using the Local Government Component Library. This page provides the information you'll need to get up and running.
+
+The Local Government Component Library is an organized collection of reusable components for front-end development of canvas apps in the domain of Local Government. These components play a crucial role in enhancing development cohesion and UI consistency whilst being customisable to authority-specific styling and responsive to differing page designs. 
+
+The library's components are compliant with Government Design System [GDS](https://design-system.service.gov.uk/patterns/) and meet the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Accessibility Guidelines.
 
 ## Solution contents
 The Power-Platform-Local-Gov-Component-Library.zip solution contains:
@@ -22,6 +26,6 @@ The components themselves are contained in the Master - LocalGov Components comp
 Moving solutions that use the component library from one environment to another environment requires for a solution containing the component library to be imported separately to the target environment before importing the solutions that use it. This is to avoid dependency issues.
 
 ## Optimisation notes
-The component library is currently optimised for use on Microsoft Edge browsers during the alpha release. Using the component library with other browsers may have issues at this time.
+The component library is currently optimised for use on Microsoft Edge browsers during the alpha release. Using the component library with other browsers and mobile devices may have issues at this time.
 
 The date component is currently optimised for settings with the "DD/MM/YYYY" date format. There may be issues when using the date component with other date format settings.
