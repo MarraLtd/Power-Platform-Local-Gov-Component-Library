@@ -48,7 +48,7 @@ Where `SubmitVar` is a generic boolean submission variable.
 
 - Multiple components can be submitted simultaneously by adding the same submission variable to the **Submit** property of all components.
 
-- Other actions can be performed based on the outcome of the submission. For example navigating to another page of the form if there are no errors using the **HasError** property of the component. For example, for a component `ComponentName` we  could have the following code in the **OnSelect** property:
+- Other actions can be performed based on the outcome of the submission. For example, navigating to another page of the form if there are no errors using the **HasError** property of the component. For instance, for a component `ComponentName` we  could have the following code in the **OnSelect** property:
 
 ```
 UpdateContext({subVar: !subVar});
