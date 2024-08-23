@@ -48,11 +48,23 @@ Where `SubmitVar` is a generic boolean submission variable.
 
 - Multiple components can be submitted simultaneously by adding the same submission variable to the **Submit** property of all components.
 
-- Other actions can be performed based on the outcome of the submission. For example navigating to another page of the form if there are no errors using the **HasError** property of the component. For example, for a component `ComponentName` we  could have the following code in the **OnSelect** property.
+- Other actions can be performed based on the outcome of the submission. For example navigating to another page of the form if there are no errors using the **HasError** property of the component. For example, for a component `ComponentName` we  could have the following code in the **OnSelect** property:
 
 ```
-If(!Email_2.HasError And !Date_2.HasError And !TelephoneNumber_2.HasError, Navigate('Multi-Component Screen 2'))
+UpdateContext({subVar: !subVar});
+If(!ComponentName.HasError, Set(ShouldNavigate,true));
 ```
+
+And in an invisible timer control's **OnTimerEnd** property enter:
+
+```
+Set(ShouldNavigate,false);
+Navigate(Screen2);
+```
+
+Where the timer has a **Duration** value of 0.
+
+**Note:** Our components' internal validation works using timers so errors are shown and cleared based on completion of timer controls. For this reason **we recommend using timers for navigation** to ensure all errors are shown or cleared before navigation, as above.
 
 ## Reset
 
