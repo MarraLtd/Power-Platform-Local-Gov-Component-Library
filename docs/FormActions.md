@@ -2,7 +2,7 @@
 
 ## Description
 
-In order to create usable forms, the components need to be able to integrate with standard Canvas App controls so that standard form actions can be executed. 
+In order to create usable forms, the components need to be able to integrate with standard Canvas App controls so that standard form actions can be executed.
 
 The components can be hooked up to Canvas App controls via exposed custom input properties. We will focus on the **submit** and **reset** actions of our components.
 
@@ -12,13 +12,13 @@ The behaviour and instructions described here are the same for all of the compon
 
 ### Description
 
-Every component has a boolean input **Submit enabled** which dictates whether the component uses live validation (boolean=false) or on submit validation (boolean=true). 
+Every component has a boolean input **Submit enabled** which dictates whether the component uses live validation (boolean=false) or on submit validation (boolean=true).
 
-Live validation means the validation occurs as soon as the input loses focus. This means the errors show as soon as the **HasError** output boolean switches from false to true. For an error to show for empty field validation, a value must be entered and then removed. This prevents errors showing as soon as fields are clicked into. 
+Live validation means the validation occurs as soon as the input loses focus. This means the errors show as soon as the **HasError** output boolean switches from false to true. For an error to show for empty field validation, a value must be entered and then removed. This prevents errors showing as soon as fields are clicked into.
 
 Submit validation means errors show on selection of a button or any other external trigger which can drive a boolean value. The **HasError** output property will switch to true as soon as an error is entered and input loses focus (same as live validation behaviour). However, the component error will not show to the user until the **Submit** input boolean has changed its value. The **Submit** boolean allows the errors to be triggered by an external control and every time **Submit** changes it will display the results of the validation on the component.
 
-###  Set Up
+### Set Up
 
 Below are instructions on how to link a button up so it submits a component:
 
@@ -48,14 +48,16 @@ Where `SubmitVar` is a generic boolean submission variable.
 
 - Multiple components can be submitted simultaneously by adding the same submission variable to the **Submit** property of all components.
 
-- Other actions can be performed based on the outcome of the submission. For example, navigating to another page of the form if there are no errors using the **HasError** property of the component. For instance, for a component `ComponentName` we  could have the following code in the **OnSelect** property:
+- Other actions can be performed based on the outcome of the submission. For example, navigating to another page of the form if there are no errors using the **HasError** property of the component. For instance, for a component `ComponentName` we could have the following code in the **OnSelect** property:
 
 ```
 UpdateContext({subVar: !subVar});
 If(!ComponentName.HasError, Set(ShouldNavigate,true));
 ```
 
-And in an invisible timer control's **OnTimerEnd** property enter:
+Then, set an invisible timer control's **Start** property to be `ShouldNavigate`.
+
+On the same timer's **OnTimerEnd** property enter:
 
 ```
 Set(ShouldNavigate,false);
@@ -89,7 +91,3 @@ Below are instructions on how to link a button up so it resets a component:
 ### Tips
 
 - Multiple components can be reset by a single button.
-
-
-
-
