@@ -15,7 +15,7 @@ Various tools are used to ensure applications built with our components are acce
 As well as running automated tooling, we manually test our components as they are being developed.
 
 -	NVDA screenreader testing: Verifying tabbing, navigation, headings, error messages, and submission based on WCAG guidelines.
-- Screen magnifier testing: Verifying magnification at 6x and 8x, label proximity validation, and synchronisation of magnifier and screenreader feedback.
+- Screen magnifier testing: Using Windows Magnifier to verify magnification at 6x and 8x, label proximity validation, and synchronisation of magnifier and screenreader feedback. Tested on both desktop and mobile applications.
 
 ## Autocomplete
 
