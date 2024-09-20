@@ -4,7 +4,7 @@ The component library has been built with accessibility in mind.
 
 The components are compliant with Government Design System [GDS](https://design-system.service.gov.uk/patterns/), and meet the [WCAG](https://www.w3.org/TR/WCAG22/) 2.2 Accessibility Guidelines.
 
-Below, we outline our approach to building for accessibility. We do also realise that accessibility needs can be varied and dependent on individual setups; if you come across an accessibility need which is not met when using our components, please do [raise an issue](https://github.com/MarraLtd/Power-Platform-Local-Gov-Component-Library/issues) and the team will can investigate making improvements based on your feedback.
+Below, we outline our approach to building for accessibility. We do also realise that accessibility needs can be varied and dependent on individual setups; if you come across an accessibility need which is not met when using our components, please do [raise an issue](https://github.com/MarraLtd/Power-Platform-Local-Gov-Component-Library/issues) and the team will investigate making improvements based on your feedback.
 
 ## Accessibility validation
 
