@@ -49,7 +49,7 @@ Size values are all provided as Number, and follow the existing sizes used withi
     - **Type**: Size
     - **Default**: 15
 
-- **ErrorBorderColor** - The color to use for the border of the input fields when the component has an error
+- **ErrorBorderColor** - The color to use for the border of the input controls when the component has an error
     - **Type**: Color
     - **Default**: "#d4351c"
 
