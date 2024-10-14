@@ -4,25 +4,15 @@
 
 The theme contract defines which styling properties can be customized, to change how the components look.
 
-It is set via the Theme property on each component, which is a Table which maps name to value. A default Table is provided,
-and you can modify a subset of properties you wish to change.
+It is set via the Theme property on each component, which is a Record which maps theme input to value. A default Record is provided, and you can modify a subset of properties you wish to change.
 
 ```
-Table(
-    {
-        name: "Font",
-        value: "Arial"
-    },
-    {
-        name: "Color",
-        value: ""#000000
-    },
-    {
-        name: "ErrorBarGap",
-        value: 5
-    }
-    ...
-)
+{
+    Font: "Arial",
+    Color: "#000000",
+    ErrorBarGap: 5,
+...
+}
 ```
 
 If a name is missing from the Theme input property, the component will fall back to an internal default.
