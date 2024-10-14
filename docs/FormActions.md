@@ -4,7 +4,7 @@
 
 In order to create usable forms, the components need to be able to integrate with standard Canvas App controls so that standard form actions can be executed.
 
-The components can be hooked up to Canvas App controls via exposed custom input properties. We will focus on the **submit** and **reset** actions of our components.
+The components can be hooked up to Canvas App controls via exposed custom input properties. We will focus on the **submit** and **reset** actions of our components. We also describe the process for ensuring components are responsive to any viewport or device type.
 
 The behaviour and instructions described here are the same for all of the components.
 
@@ -91,3 +91,25 @@ Below are instructions on how to link a button up so it resets a component:
 ### Tips
 
 - Multiple components can be reset by a single button.
+
+##  Responsiveness
+
+All components's heights are vertically responsive by default. This means their height will change as the component's theme is configured (see [Theme Doc](Theme.md)). However, the component's width cannot fill the width of its Parent by default, so this is a manual process.
+
+### Set Up
+
+Below are instructions on how to configure a component so it has responsive width:
+
+1. Add the component from the library to your application.
+
+2. Set the component's width property to be `Parent.Width`.
+
+3. In play mode, the component will take the width of whatever control it sits inside of.
+
+### Tips
+
+- Setting a component's width as `Parent.Width` when there is no Parent control will give the component the width of the page.
+
+
+
+
