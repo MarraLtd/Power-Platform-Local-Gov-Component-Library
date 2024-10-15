@@ -55,9 +55,9 @@ There are also custom output properties which can be used to reference component
 - **Has error - HasError** - Boolean value based on whether an error is present in the component.
 - **Min height - MinHeight** - Minimum height for all visible elements of the component to be shown. This is responsive to the height of the component, so no part of the component is ever cut off. This is the default value of the component's height property.
 - **Raw value - RawValue** - Outputs the unsanitised value in the date input. This is outputted on change of value in each field. There are 3 RawValue outputs:
-    - **RawValue.Day** - Outputs the value in the day input.
-    - **RawValue.Month** - Outputs the value in the month input.
-    - **RawValue.Year** - Outputs the value in the year input.
+  - **RawValue.Day** - Outputs the value in the day input.
+  - **RawValue.Month** - Outputs the value in the month input.
+  - **RawValue.Year** - Outputs the value in the year input.
 
 ### Output Sanitisation
 
@@ -77,19 +77,19 @@ The format of the day, month and year inputs has been set to numbers only. This 
 Below is a list of input cases that the date validation triggers an error for. As per the GDS, empty field errors will be shown first, followed by invalid field errors and then relational date errors.
 
 - **All visible inputs are empty and the date input is required (i.e. Required input property is set to true)** - Triggers when the day, month and year fields are all visible and the user leaves all the inputs empty. For example, the input "Day: , Month: , Year: ".
-    - **Error Message:** "Enter a Date"
+  - **Error Message:** "Enter a Date"
 - **The number of fields with user input is at least 1 but less than the number of visible fields.** - Triggers when the number of fields with user input is greater than 1 but there is at least 1 other field that is visible and empty. For example, the inputs "Day: , Month: 3, Year: " and "Month: , Year: 1996".
-    - **Error Message:** "Date must include a [missing fields]"
+  - **Error Message:** "Date must include a [missing fields]"
 - **Field input is 0** - Triggers an error when any field is visible and the user enters a day input of 0. For example, the input "Day: 0, Month: 3, Year: 1996".
-    - **Error Message:** "Date must include a real [invalid fields]"
+  - **Error Message:** "Date must include a real [invalid fields]"
 - **Day input is greater than the final day of the entered month and year** - Triggers an error when the day input entered is greater than the final day of the entered month. This also takes account of leap years, where the total number of days in February vary. For example, the inputs "Day: 31, Month: 6, Year: 2005" and "Day: 29, Month: 2, Year: 1995" will trigger an error.
-    - **Error Message:** "Date must include a real day"
+  - **Error Message:** "Date must include a real day"
 - **Year input is less than 4 digits in length** - Triggers when the year field is visible and the user enters a year input which is less than 4 digits in length. For example, the inputs "Day: 31, Month: 3, Year: 165" and "Month: 2, Year: 12".
-    - **Error Message:** "Date must include a real year"
+  - **Error Message:** "Date must include a real year"
 - **Any of the inputs that are visible are not a positive integer** - Triggers when the user enters a numerical value that is not a positive integer into any of the day, month or year inputs when they are visible. For example, the inputs "Day: -1, Month: 4, Year: -5" and "Day: .2, Month: .4, Year: 1996" will trigger an error.
-    - **Error Message:** "Date must include a real [invalid fields]"
+  - **Error Message:** "Date must include a real [invalid fields]"
 - **Month input is less than 1 or greater than 12** - Triggers when the user enters a month input which is less than 1 or greater than 12. For example, the inputs "Day: 24, Month: 0, Year: 2021" and "Day: 12, Month: 15, Year: 2008".
-    - **Error Message:** "Date must include a real month"
+  - **Error Message:** "Date must include a real month"
 
 ### Relational Dates
 
