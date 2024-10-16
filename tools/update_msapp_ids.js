@@ -59,8 +59,8 @@ function updateXml() {
 
     const inputFileXmlContents = fs.readFileSync(metadataFile, 'utf-8');
     const xmlParser = new XMLParser();
-    const parsedInputFilelXmlContents = xmlParser.parse(inputFileXmlContents);
-    const appComponents = JSON.parse(parsedInputFilelXmlContents.CanvasApp.AppComponents);
+    const parsedInputFileXmlContents = xmlParser.parse(inputFileXmlContents);
+    const appComponents = JSON.parse(parsedInputFileXmlContents.CanvasApp.AppComponents);
     for (const config of componentConfigs) {
         const entry = appComponents.find(x => x.displayName === config.component);
         console.log(`Updating ${config.component} XML appComponentName to ${config.name}`);
