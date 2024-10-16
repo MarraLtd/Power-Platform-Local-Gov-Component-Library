@@ -12,7 +12,7 @@ To run the script:
 
 - Run `npm install`.
 
-- Run `./update_component_identifiers.sh` and pass in the path to the solution zip file, and the path to where you want the output file to be produced. For example, if the new release zip file is located at `C:\Libraries\Input_Release_0_0_0_2.zip` and you want the output to be produced as `C:\Libraries\Output_Release_0_0_0_2.zip`, run `./update_component_identifiers.sh "\Libraries\Input_Release_0_0_0_2.zip" "\Libraries\Output_Release_0_0_0_2.zip"`
+- Run `./update_component_identifiers.sh` and pass in the path to the solution zip file using `-i`, and the path to where you want the output file to be produced using `-o`. For example, if the new release zip file is located at `C:\Libraries\Input_Release_0_0_0_2.zip` and you want the output to be produced as `C:\Libraries\Output_Release_0_0_0_2.zip`, run `./update_component_identifiers.sh -i "\Libraries\Input_Release_0_0_0_2.zip" -o "\Libraries\Output_Release_0_0_0_2.zip"`
 
 - `C:\Libraries\Output_Release_0_0_0_2.zip` now contains the files to add to GitHub as the next release.
 
