@@ -6,10 +6,9 @@ const args = argv.slice(2);
 
 const solutionRoot = args[0];
 const msappFolder = args[1];
-const libId = args[2];
 
 const filenameRoot = `${solutionRoot}/CanvasApps/${msappFolder}/Src/Components/`;
-const metadataFile = `${solutionRoot}/CanvasApps/${libId}.meta.xml`;
+const metadataFile = `${solutionRoot}/CanvasApps/cr6fd_govlib_137b8.meta.xml`;
 
 const componentConfigs = [
     {
