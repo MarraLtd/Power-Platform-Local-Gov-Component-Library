@@ -10,22 +10,22 @@ do
 done
 
 if [ -z "${NEW_SOLUTION_ZIP}" ]; then
-    echo "-i arg missing, pass the path to the input solution to upate, e.g -i \"\ComponentLibraries\LocalGovComponentLibrary_1_0_0_1.zip\""
+    echo "-i arg missing, pass the path to the input solution to upate, e.g -i \"\ComponentLibraries\LocalGovComponentLibrary_1_0_0_1.zip"
     exit 1
 fi
 
 if [ -z "${OUTPUT_ZIP}" ]; then
-    echo "-o arg missing, pass the path the output solution filename, e.g. -o \"\ComponentLibraries\Release_LocalGovComponentLibrary_1_0_0_1.zip\""
+    echo "-o arg missing, pass the path the output solution filename, e.g. -o \"\ComponentLibraries\Release_LocalGovComponentLibrary_1_0_0_1.zip"
     exit 1
 fi
 
 if [[ "$NEW_SOLUTION_ZIP" == "$OUTPUT_ZIP" ]]; then
-    echo "input zip (-n) and output zip (-o) values must be different"
+    echo "input zip (-i) and output zip (-o) values must be different"
 fi
 
 NEW_SOLUTION_DIR=$(dirname $NEW_SOLUTION_ZIP)
 SOLUTION_UNPACKED_FOLDER="${NEW_SOLUTION_DIR}\unpacked_solution"
-MSAPP_FILE_PATH="${SOLUTION_UNPACKED_FOLDER}\CanvasApps\cr6fd_govlib_137b8_DocumentUri.msapp"
+MSAPP_FILE_PATH="${SOLUTION_UNPACKED_FOLDER}\CanvasApps\ma_masterlocalgovcomponents_256ee_DocumentUri.msapp"
 MSAPP_UNPACKED_FOLDER="${SOLUTION_UNPACKED_FOLDER}\CanvasApps\unpacked_msapp"
 
 echo "Unpacking solution"
