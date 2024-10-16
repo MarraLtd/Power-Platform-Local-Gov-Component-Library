@@ -31,7 +31,7 @@ The components themselves are contained in the Master - LocalGov Components comp
 2. Go to the Insert menu on the left > Get more components (file and magnifying glass symbol) > Master - LocalGov Components > Select all components needed > Import.
 3. Components can be used in a canvas application as Library Components from the Insert menu.
 
-You can find further information on the official Microsfot documentation on [Importing from a Component Library](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/component-library#import-from-a-component-library)
+You can find further information on the official Microsoft documentation on [Importing from a Component Library](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/component-library#import-from-a-component-library)
 
 ## Moving solutions using the component library between environments
 Moving solutions that use the component library from one environment to another environment requires for a solution containing the component library to be imported separately to the target environment before importing the solutions that use it. This is to avoid dependency issues.
