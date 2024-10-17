@@ -115,7 +115,3 @@ Below are instructions on how to configure a component so it has responsive widt
 ### Tips
 
 - Setting a component's width as `Parent.Width` when there is no Parent control will give the component the width of the page.
-
-
-
-
