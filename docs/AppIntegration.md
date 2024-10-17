@@ -1,6 +1,12 @@
-# Form Actions
+# App Integration
 
-## Description
+This section contains information on how to integrate the controls with your apps.
+
+[Form Actions](#form-actions) - how to hook up Submit and Validation behaviour with forms.
+
+[Responsiveness](#app-responsiveness) - how to ensure the components are responsive to your application width and height.
+
+## Form Actions
 
 In order to create usable forms, the components need to be able to integrate with standard Canvas App controls so that standard form actions can be executed.
 
@@ -92,7 +98,7 @@ Below are instructions on how to link a button up so it resets a component:
 
 - Multiple components can be reset by a single button.
 
-##  Responsiveness
+##  App Responsiveness
 
 All components's heights are vertically responsive by default. This means their height will change as the component's theme is configured (see [Theme Doc](Theme.md)). However, the component's width cannot fill the width of its Parent by default, so this is a manual process.
 
