@@ -26,7 +26,7 @@ There are also custom output properties which can be used to reference component
   - **Default:** True
 - **Required - Required** - Boolean value that controls whether the date input is required or optional.
   - **Default:** True
-- **Submit enabled - SubmitEnabled** - Enables submit functionality. When this is false, live validation is used. To hook up submit functionality to an external control see [Form Actions docs](./../FormActions.md).
+- **Submit enabled - SubmitEnabled** - Enables submit functionality. When this is false, live validation is used. To hook up submit functionality to an external control see [App Integration docs](./../AppIntegration.md).
   - **Default:** True
 - **Submit - Submit** - Boolean to trigger the on submit functionality. Only works when SubmitEnabled is set to true.
   - **Default:** False
