@@ -100,7 +100,7 @@ Below are instructions on how to link a button up so it resets a component:
 
 ##  App Responsiveness
 
-All components's heights are vertically responsive by default. This means their height will change as the component's theme is configured (see [Theme Doc](Theme.md)). However, the component's width cannot fill the width of its Parent by default, so this is a manual process.
+All components' heights are vertically responsive by default. This means their height will change as the component's theme is configured (see [Theme Doc](Theme.md)). However, the component's width cannot fill the width of its Parent by default, so this is a manual process.
 
 ### Set Up
 
