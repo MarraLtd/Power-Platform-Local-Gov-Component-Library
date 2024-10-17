@@ -10,7 +10,7 @@ This section contains information on how to integrate the controls with your app
 
 In order to create usable forms, the components need to be able to integrate with standard Canvas App controls so that standard form actions can be executed.
 
-The components can be hooked up to Canvas App controls via exposed custom input properties. We will focus on the **submit** and **reset** actions of our components. We also describe the process for ensuring components are responsive to any viewport or device type.
+The components can be hooked up to Canvas App controls via exposed custom input properties. We will focus on the **submit** and **reset** actions of our components.
 
 The behaviour and instructions described here are the same for all of the components.
 
