@@ -33,15 +33,10 @@ There are also custom output properties which can be used to reference component
 
 The following input properties are records that configure the state of each input field, containing:
 - **Required** - Whether the input is required or optional
-    -**Default:** True
 - **Visible** - Whether the address field is visible or hidden
-    - **Default:** True
 - **InputWidthProportion** - The width proportion of the text input. Note, a width proportion of 1 results in the text input width equal to the width of the component.
-    - **Default:** 1
 - **Default** - The default value of the input that a user sees when they navigate to the component
-    - **Default:** ""
 - **Disabled** - Whether the input is in edit or disabled mode
-    - **Default:** False
 
 These input properties are defined so there is one property per address field, as below:
 
