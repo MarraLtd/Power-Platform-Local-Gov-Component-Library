@@ -31,7 +31,7 @@ There are also custom output properties which can be used to reference component
 - **Required - Required** - Boolean value that controls whether the text input is required or optional.
     - **Default:** True
 
-- **Submit enabled - SubmitEnabled** - Enables submit functionality. When this is false, live validation is used. To hook up submit functionality to an external control see [Form Actions docs](./../FormActions.md).
+- **Submit enabled - SubmitEnabled** - Enables submit functionality. When this is false, live validation is used. To hook up submit functionality to an external control see [App Integration docs](./../AppIntegration.md).
     - **Default:** True
 
 - **Submit - Submit** - Boolean to trigger the on submit functionality. Only works when SubmitEnabled is set to true.
@@ -42,6 +42,12 @@ There are also custom output properties which can be used to reference component
 
 - **Show icon - ShowIcon** - Boolean value that controls visibility of the telephone icon.
     - **Default:** False
+
+- **Disabled - Disabled** - Boolean value that controls whether the text input is in edit or disabled mode. While true the input is disabled and whilst false the input can be typed into.
+    - **Default:** False
+
+- **Default - Default** - When text is set, this defines the default telephone number a user sees when they navigate to the component.
+    - **Default:** ""
 
 ### Outputs
 
