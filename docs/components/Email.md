@@ -47,6 +47,9 @@ There are also custom output properties which can be used to reference component
 - **Disabled - Disabled** - Boolean value that controls whether the text input is in edit or disabled mode. While true the input is disabled and whilst false the input can be typed into.
     - **Default:** False
 
+- **Default - Default** - When text is set, this defines the default email a user sees when they navigate to the component.
+    - **Default:** ""
+
 ### Outputs
 
 - **Value** - Outputs the sanitised text input.
