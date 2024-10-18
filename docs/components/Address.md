@@ -31,20 +31,27 @@ There are also custom output properties which can be used to reference component
 - **Theme - Theme** - Configures the styling of component elements
     - **Default:** - See [Theme Documentation](../Theme.md).
 
-The following input properties are records that control whether the respective text input is required or optional, controls the visibility of the respective field and controls the width proportion of the text input. Note, a width proportion of 1 results in the text input width equal to the width of the component.
+The following input properties are records that configure the state of each input field, containing:
+- **Required** - Whether the input is required or optional
+- **Visible** - Whether the address field is visible or hidden
+- **InputWidthProportion** - The width proportion of the text input. Note, a width proportion of 1 results in the text input width equal to the width of the component.
+- **Default** - The default value of the input that a user sees when they navigate to the component
+- **Disabled** - Whether the input is in edit or disabled mode
+
+These input properties are defined so there is one property per address field, as below:
 
 - **Address line 1 - AddressLine1** 
-    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 1}
+    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 1, Default: "", Disabled: false}
 - **Address line 2 - AddressLine2**
-    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 1}
+    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 1, Default: "", Disabled: false}
 - **Town/City - TownCity**
-    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 2/3}
+    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 2/3, Default: "", Disabled: false}
 - **County - County**
-    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 2/3}
+    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 2/3, Default: "", Disabled: false}
 - **Postcode - Postcode**
-    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 1/3}
+    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 1/3, Default: "", Disabled: false}
 - **Country - Country**
-    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 2/3}
+    - **Default:** - {Required: true, Visible: true, InputWidthProportion: 2/3, Default: "", Disabled: false}
 
 ### Outputs
 - **Value** - Outputs the sanitised text inputs as a record with column names AddressLine1, AddressLine 2, TownCity, County, Postcode and Country. To access specific values, the user should use Address.Value.'ColumnName' e.g. to access TownCity, use Address.Value.TownCity.
