@@ -1,8 +1,9 @@
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Entities></Entities>
-  <Roles></Roles>
-  <Workflows></Workflows>
-  <FieldSecurityProfiles></FieldSecurityProfiles>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24095.192" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24095.00192">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
   <Templates />
   <EntityMaps />
   <EntityRelationships />
@@ -13,11 +14,11 @@
   <CanvasApps>
     <CanvasApp>
       <Name>ma_exampleapp_8447d</Name>
-      <AppVersion>2024-08-23T11:24:53Z</AppVersion>
+      <AppVersion>2024-10-22T10:27:00Z</AppVersion>
       <Status>Ready</Status>
-      <CreatedByClientVersion>3.24082.13.0</CreatedByClientVersion>
-      <MinClientVersion>3.24082.13.0</MinClientVersion>
-      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24082.13","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20240823T094331Z-3.24082.13.0"}</Tags>
+      <CreatedByClientVersion>3.24101.10.0</CreatedByClientVersion>
+      <MinClientVersion>3.24101.10.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24101.10","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20241022T093637Z-3.24101.10.0"}</Tags>
       <IsCdsUpgraded>0</IsCdsUpgraded>
       <GalleryItemId xsi:nil="true"></GalleryItemId>
       <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
@@ -29,7 +30,7 @@
       <ConnectionReferences>{}</ConnectionReferences>
       <DatabaseReferences>{}</DatabaseReferences>
       <AppComponents>[]</AppComponents>
-      <AppComponentDependencies>[{"appComponentName":"55de981162aa422586854f20020ecfca","appName":"8e855699-4bbe-42e2-9ddd-8a823957fc88","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"a5187d8589a94c008ab7ebd19097d64e","appName":"8e855699-4bbe-42e2-9ddd-8a823957fc88","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"47efd4e80b344d83825b815d090c20a5","appName":"8e855699-4bbe-42e2-9ddd-8a823957fc88","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"7e5c2c37dc694c4b951278aacef18be1","appName":"8e855699-4bbe-42e2-9ddd-8a823957fc88","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"}]</AppComponentDependencies>
+      <AppComponentDependencies>[{"appComponentName":"151bd78462e0434e86c7a1184edc1e29","appName":"8e855699-4bbe-42e2-9ddd-8a823957fc88","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"e4eaf9365da545c9afe81563321dcbc3","appName":"8e855699-4bbe-42e2-9ddd-8a823957fc88","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"50baeb2845cf4332834dd519f8cbfe6a","appName":"8e855699-4bbe-42e2-9ddd-8a823957fc88","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"bc8b6e9c7a244e03b19fe611dbf93ed3","appName":"8e855699-4bbe-42e2-9ddd-8a823957fc88","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"}]</AppComponentDependencies>
       <CanConsumeAppPass>0</CanConsumeAppPass>
       <CanvasAppType>0</CanvasAppType>
       <BypassConsent>0</BypassConsent>
@@ -45,23 +46,60 @@
       </AdditionalUris>
     </CanvasApp>
     <CanvasApp>
-      <Name>ma_masterlocalgovcomponents_256ee</Name>
-      <AppVersion>2024-08-23T09:36:16Z</AppVersion>
+      <Name>ma_localgovcomponentsglossary_f5343</Name>
+      <AppVersion>2024-10-22T09:48:00Z</AppVersion>
       <Status>Ready</Status>
-      <CreatedByClientVersion>3.24082.13.0</CreatedByClientVersion>
-      <MinClientVersion>3.24082.13.0</MinClientVersion>
-      <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"603","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","showStatusBar":"false","publisherVersion":"3.24082.13","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20240822T090424Z-3.24082.13.0"}</Tags>
+      <CreatedByClientVersion>3.24101.10.0</CreatedByClientVersion>
+      <MinClientVersion>3.24101.10.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24101.10","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20240823T094730Z-3.24082.13.0"}</Tags>
       <IsCdsUpgraded>0</IsCdsUpgraded>
       <GalleryItemId xsi:nil="true"></GalleryItemId>
-      <BackgroundColor>RGBA(251,101,60,1)</BackgroundColor>
-      <DisplayName>Master - LocalGov Components</DisplayName>
-      <Description>Fixed date and address text inputs alignment</Description>
+      <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+      <DisplayName>LocalGov Components Glossary</DisplayName>
+      <Description xsi:nil="true"></Description>
       <CommitMessage xsi:nil="true"></CommitMessage>
       <Publisher xsi:nil="true"></Publisher>
       <AuthorizationReferences>[]</AuthorizationReferences>
       <ConnectionReferences>{}</ConnectionReferences>
       <DatabaseReferences>{}</DatabaseReferences>
-      <AppComponents>[{"appComponentName":"47efd4e80b344d83825b815d090c20a5","displayName":"TelephoneNumber","appName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","appDisplayName":"Master - LocalGov Components","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6","owner":{"id":"78355f66-036c-4a36-9472-176f0d8cd5d6","displayName":"Andrew Jones","email":"ajones@marra.co.uk","type":"User","tenantId":"e750008a-1840-49bb-827e-6b0bdd5e00c4","userPrincipalName":"ajones@marra.co.uk"},"allowCustomization":true,"createdOn":"2024-04-30T14:03:18.46Z","lastModifiedOn":"2024-08-23T09:35:41.032Z","connectionReferences":{},"databaseReferences":{}},{"appComponentName":"55de981162aa422586854f20020ecfca","displayName":"Address","appName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","appDisplayName":"Master - LocalGov Components","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6","owner":{"id":"78355f66-036c-4a36-9472-176f0d8cd5d6","displayName":"Andrew Jones","email":"ajones@marra.co.uk","type":"User","tenantId":"e750008a-1840-49bb-827e-6b0bdd5e00c4","userPrincipalName":"ajones@marra.co.uk"},"allowCustomization":true,"createdOn":"2024-04-30T14:03:18.46Z","lastModifiedOn":"2024-08-23T09:35:41.032Z","connectionReferences":{},"databaseReferences":{}},{"appComponentName":"a5187d8589a94c008ab7ebd19097d64e","displayName":"Date","appName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","appDisplayName":"Master - LocalGov Components","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6","owner":{"id":"78355f66-036c-4a36-9472-176f0d8cd5d6","displayName":"Andrew Jones","email":"ajones@marra.co.uk","type":"User","tenantId":"e750008a-1840-49bb-827e-6b0bdd5e00c4","userPrincipalName":"ajones@marra.co.uk"},"allowCustomization":true,"createdOn":"2024-04-30T14:03:18.46Z","lastModifiedOn":"2024-08-23T09:35:41.032Z","connectionReferences":{},"databaseReferences":{}},{"appComponentName":"7e5c2c37dc694c4b951278aacef18be1","displayName":"Email","appName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","appDisplayName":"Master - LocalGov Components","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6","owner":{"id":"78355f66-036c-4a36-9472-176f0d8cd5d6","displayName":"Andrew Jones","email":"ajones@marra.co.uk","type":"User","tenantId":"e750008a-1840-49bb-827e-6b0bdd5e00c4","userPrincipalName":"ajones@marra.co.uk"},"allowCustomization":true,"createdOn":"2024-04-30T14:03:18.46Z","lastModifiedOn":"2024-08-23T09:35:41.032Z","connectionReferences":{},"databaseReferences":{}}]</AppComponents>
+      <AppComponents>[]</AppComponents>
+      <AppComponentDependencies>[{"appComponentName":"50baeb2845cf4332834dd519f8cbfe6a","appName":"8254eb20-8c0a-424b-92d3-d91a30ff13a3","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"151bd78462e0434e86c7a1184edc1e29","appName":"8254eb20-8c0a-424b-92d3-d91a30ff13a3","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"e4eaf9365da545c9afe81563321dcbc3","appName":"8254eb20-8c0a-424b-92d3-d91a30ff13a3","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"bc8b6e9c7a244e03b19fe611dbf93ed3","appName":"8254eb20-8c0a-424b-92d3-d91a30ff13a3","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"}]</AppComponentDependencies>
+      <CanConsumeAppPass>0</CanConsumeAppPass>
+      <CanvasAppType>0</CanvasAppType>
+      <BypassConsent>0</BypassConsent>
+      <AdminControlBypassConsent>0</AdminControlBypassConsent>
+      <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <CdsDependencies>{"cdsdependencies":[{"logicalname":"ma_masterlocalgovcomponents_256ee","componenttype":300,"componenttypeplatformname":"CanvasApp"}]}</CdsDependencies>
+      <IsCustomizable>1</IsCustomizable>
+      <BackgroundImageUri>/CanvasApps/ma_localgovcomponentsglossary_f5343_BackgroundImageUri</BackgroundImageUri>
+      <DocumentUri>/CanvasApps/ma_localgovcomponentsglossary_f5343_DocumentUri.msapp</DocumentUri>
+      <AdditionalUris>
+        <AdditionalUri>/CanvasApps/ma_localgovcomponentsglossary_f5343_AdditionalUris0_identity.json</AdditionalUri>
+      </AdditionalUris>
+    </CanvasApp>
+    <CanvasApp>
+      <Name>ma_masterlocalgovcomponents_256ee</Name>
+      <AppVersion>2024-10-10T10:11:57Z</AppVersion>
+      <Status>Ready</Status>
+      <CreatedByClientVersion>3.24095.15.0</CreatedByClientVersion>
+      <MinClientVersion>3.24095.15.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","showStatusBar":"false","publisherVersion":"3.24095.15","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20241002T092359Z-3.24092.17.0"}</Tags>
+      <IsCdsUpgraded>0</IsCdsUpgraded>
+      <GalleryItemId xsi:nil="true"></GalleryItemId>
+      <BackgroundColor>RGBA(251,101,60,1)</BackgroundColor>
+      <DisplayName>Master - LocalGov Components</DisplayName>
+      <Description>Date - Live validation with default value does not trigger until all fields have been entered; Invalid output shows before component fields are clicked out of
+
+Address - Set overall optional label if all fields optional for Address; Make disabling fields a field-wise option
+
+All components - Make padding top/bottom of text inputs relative to font size; Border thickness cuts off labels above; Special characters slightly cut off in text input when font size is greater than 35</Description>
+      <CommitMessage xsi:nil="true"></CommitMessage>
+      <Publisher xsi:nil="true"></Publisher>
+      <AuthorizationReferences>[]</AuthorizationReferences>
+      <ConnectionReferences>{}</ConnectionReferences>
+      <DatabaseReferences>{}</DatabaseReferences>
+      <AppComponents>[{"appComponentName":"47efd4e80b344d83825b815d090c20a5","displayName":"TelephoneNumber","appName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","appDisplayName":"Master - LocalGov Components","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6","owner":{"id":"78355f66-036c-4a36-9472-176f0d8cd5d6","displayName":"Andrew Jones","email":"ajones@marra.co.uk","type":"User","tenantId":"e750008a-1840-49bb-827e-6b0bdd5e00c4","userPrincipalName":"ajones@marra.co.uk"},"allowCustomization":true,"createdOn":"2024-04-30T14:03:18.46Z","lastModifiedOn":"2024-10-02T09:24:25.637Z","connectionReferences":{},"databaseReferences":{}},{"appComponentName":"7e5c2c37dc694c4b951278aacef18be1","displayName":"Email","appName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","appDisplayName":"Master - LocalGov Components","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6","owner":{"id":"78355f66-036c-4a36-9472-176f0d8cd5d6","displayName":"Andrew Jones","email":"ajones@marra.co.uk","type":"User","tenantId":"e750008a-1840-49bb-827e-6b0bdd5e00c4","userPrincipalName":"ajones@marra.co.uk"},"allowCustomization":true,"createdOn":"2024-04-30T14:03:18.46Z","lastModifiedOn":"2024-10-02T09:24:25.637Z","connectionReferences":{},"databaseReferences":{}},{"appComponentName":"55de981162aa422586854f20020ecfca","displayName":"Address","appName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","appDisplayName":"Master - LocalGov Components","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6","owner":{"id":"78355f66-036c-4a36-9472-176f0d8cd5d6","displayName":"Andrew Jones","email":"ajones@marra.co.uk","type":"User","tenantId":"e750008a-1840-49bb-827e-6b0bdd5e00c4","userPrincipalName":"ajones@marra.co.uk"},"allowCustomization":true,"createdOn":"2024-04-30T14:03:18.46Z","lastModifiedOn":"2024-10-02T09:24:25.637Z","connectionReferences":{},"databaseReferences":{}},{"appComponentName":"a5187d8589a94c008ab7ebd19097d64e","displayName":"Date","appName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appVersion":"2024-10-10T10:11:57Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","appDisplayName":"Master - LocalGov Components","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6","owner":{"id":"78355f66-036c-4a36-9472-176f0d8cd5d6","displayName":"Andrew Jones","email":"ajones@marra.co.uk","type":"User","tenantId":"e750008a-1840-49bb-827e-6b0bdd5e00c4","userPrincipalName":"ajones@marra.co.uk"},"allowCustomization":true,"createdOn":"2024-04-30T14:03:18.46Z","lastModifiedOn":"2024-10-02T09:24:25.637Z","connectionReferences":{},"databaseReferences":{}}]</AppComponents>
       <AppComponentDependencies>[]</AppComponentDependencies>
       <CanConsumeAppPass>0</CanConsumeAppPass>
       <CanvasAppType>1</CanvasAppType>
@@ -75,39 +113,6 @@
       <DocumentUri>/CanvasApps/ma_masterlocalgovcomponents_256ee_DocumentUri.msapp</DocumentUri>
       <AdditionalUris>
         <AdditionalUri>/CanvasApps/ma_masterlocalgovcomponents_256ee_AdditionalUris0_identity.json</AdditionalUri>
-      </AdditionalUris>
-    </CanvasApp>
-    <CanvasApp>
-      <Name>ma_localgovcomponentsglossary_f5343</Name>
-      <AppVersion>2024-08-23T09:47:30Z</AppVersion>
-      <Status>Ready</Status>
-      <CreatedByClientVersion>3.24082.13.0</CreatedByClientVersion>
-      <MinClientVersion>3.24082.13.0</MinClientVersion>
-      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24082.13","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20240822T104609Z-3.24082.13.0"}</Tags>
-      <IsCdsUpgraded>0</IsCdsUpgraded>
-      <GalleryItemId xsi:nil="true"></GalleryItemId>
-      <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
-      <DisplayName>LocalGov Components Glossary</DisplayName>
-      <Description xsi:nil="true"></Description>
-      <CommitMessage xsi:nil="true"></CommitMessage>
-      <Publisher xsi:nil="true"></Publisher>
-      <AuthorizationReferences>[]</AuthorizationReferences>
-      <ConnectionReferences>{}</ConnectionReferences>
-      <DatabaseReferences>{}</DatabaseReferences>
-      <AppComponents>[]</AppComponents>
-      <AppComponentDependencies>[{"appComponentName":"7e5c2c37dc694c4b951278aacef18be1","appName":"8254eb20-8c0a-424b-92d3-d91a30ff13a3","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"47efd4e80b344d83825b815d090c20a5","appName":"8254eb20-8c0a-424b-92d3-d91a30ff13a3","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"55de981162aa422586854f20020ecfca","appName":"8254eb20-8c0a-424b-92d3-d91a30ff13a3","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"},{"appComponentName":"a5187d8589a94c008ab7ebd19097d64e","appName":"8254eb20-8c0a-424b-92d3-d91a30ff13a3","appComponentLibraryName":"8a0ef560-582c-4c45-b3f6-c3b703caa968","appComponentLibraryVersion":"2024-08-23T09:36:16Z","appComponentLibraryLogicalName":"ma_masterlocalgovcomponents_256ee","environmentName":"d80b801a-d381-ece6-a99a-1aa584c5baa6"}]</AppComponentDependencies>
-      <CanConsumeAppPass>0</CanConsumeAppPass>
-      <CanvasAppType>0</CanvasAppType>
-      <BypassConsent>0</BypassConsent>
-      <AdminControlBypassConsent>0</AdminControlBypassConsent>
-      <EmbeddedApp xsi:nil="true"></EmbeddedApp>
-      <IntroducedVersion>1.0</IntroducedVersion>
-      <CdsDependencies>{"cdsdependencies":[{"logicalname":"ma_masterlocalgovcomponents_256ee","componenttype":300,"componenttypeplatformname":"CanvasApp"}]}</CdsDependencies>
-      <IsCustomizable>1</IsCustomizable>
-      <BackgroundImageUri>/CanvasApps/ma_localgovcomponentsglossary_f5343_BackgroundImageUri</BackgroundImageUri>
-      <DocumentUri>/CanvasApps/ma_localgovcomponentsglossary_f5343_DocumentUri.msapp</DocumentUri>
-      <AdditionalUris>
-        <AdditionalUri>/CanvasApps/ma_localgovcomponentsglossary_f5343_AdditionalUris0_identity.json</AdditionalUri>
       </AdditionalUris>
     </CanvasApp>
   </CanvasApps>
