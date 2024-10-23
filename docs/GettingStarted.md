@@ -11,7 +11,7 @@ The Local Government Component Library is an organized collection of reusable co
 The library's components are compliant with Government Design System [GDS](https://design-system.service.gov.uk/patterns/) and meet the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Accessibility Guidelines.
 
 ## Solution download
-You can download the current release of the component library [here](https://github.com/MarraLtd/Power-Platform-Local-Gov-Component-Library/releases/download/v0.1.0-alpha/Power-Platform-Local-Gov-Component-Library.zip). You don't need to unzip this file, just import it into Power Platform as outlined below.
+You can download the current release of the component library [here](https://github.com/MarraLtd/Power-Platform-Local-Gov-Component-Library/releases/download/v0.2.0-alpha/Power-Platform-Local-Gov-Component-Library.zip). You don't need to unzip this file, just import it into Power Platform as outlined below.
 
 ## Solution contents
 When you import the solution into Power Platform, you will gain access to 3 artefacts:
